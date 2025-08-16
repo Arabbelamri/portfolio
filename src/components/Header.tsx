@@ -1,5 +1,5 @@
 import React from 'react';
-import { Moon, Sun, Menu } from 'lucide-react';
+import { Moon, Sun, Menu, Download } from 'lucide-react';
 
 interface HeaderProps {
   darkMode: boolean;
@@ -49,6 +49,15 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode, activeSection })
           </div>
 
           <div className="flex items-center space-x-4">
+            <a
+              href="/mon_cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+            >
+              <span>📄</span>
+              <span className="hidden sm:inline">Voir CV</span>
+            </a>
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
