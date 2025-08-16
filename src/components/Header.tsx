@@ -55,7 +55,6 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode, activeSection })
               rel="noopener noreferrer"
               className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
             >
-              <span>📄</span>
               <span className="hidden sm:inline">Voir CV</span>
             </a>
             <button
